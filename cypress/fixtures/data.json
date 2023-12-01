@@ -1,0 +1,20 @@
+{
+  "squadName" : "Super Hero Squad",
+  "homeTown" : "Metro City",
+  "formed" : 2016,
+  "secretBase" : "Super tower",
+  "active" : true,
+  "members" : [
+
+    {
+      "name" : "Sherlock Holmes",
+      "age" : 120,
+      "secretIdentity" : "Security officer",
+      "powers" : [
+        "Mind Palace",
+        "Deduction Method",
+        "Superhuman reflexes"
+      ]
+    }
+  ]
+}
