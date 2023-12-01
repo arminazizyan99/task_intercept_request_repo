@@ -26,13 +26,12 @@ it("should modify response",()=>{
 
       }).as("data")
   
-
   cy.visit("https://mdn.github.io/learning-area/javascript/oojs/json/heroes-finished.html")
 
-
-  cy.wait("@data")
-
-
+  cy.wait("@data").its('response')
+  .should(response => expect(response.statusCode).to.eq(200))   
+  .should(response => expect(response.body.members.length).to.eq(1))
+  .should(response => expect(response.body.members[0].name).to.contain("Sherlock Holmes"))
   
 })
 })
