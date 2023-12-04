@@ -1,10 +1,11 @@
 describe("Request/Intercept",()=>{
-  //context('iphone-5 resolution', () => {
-  //beforeEach(()=>{
-
-    //cy.viewport(768, 1024)
-  
- //})
+  context('view resolution', () => {
+  beforeEach(()=>{
+    
+    const viewValue = Cypress.env("viewPort")
+    cy.viewport(viewValue)
+    
+ })
 
   it("should contain title text using request", ()=>{
 
@@ -35,4 +36,4 @@ it("should modify response using intercept",()=>{
   
 })
 })
-//})
+})
