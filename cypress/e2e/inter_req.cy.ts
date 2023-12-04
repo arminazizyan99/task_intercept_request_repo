@@ -1,10 +1,10 @@
 describe("Request/Intercept",()=>{
+  //context('iphone-5 resolution', () => {
   //beforeEach(()=>{
 
-  //   cy.visit("/");
+    //cy.viewport(768, 1024)
   
- // })
-
+ //})
 
   it("should contain title text using request", ()=>{
 
@@ -35,3 +35,4 @@ it("should modify response using intercept",()=>{
   
 })
 })
+//})
