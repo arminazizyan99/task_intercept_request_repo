@@ -23,3 +23,13 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add("setUserAgent", (userAgent) =>{
+
+    cy.on('window:before:load',(win) => {
+        Object.defineProperty(win.NavigationPreloadManager, userAgent,{
+            value: userAgent,
+            configurable: true
+        })
+    })
+})

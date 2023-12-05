@@ -2,11 +2,11 @@
   "name": "task2_repo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cy:run-mobile": "cypress run --headed --no-exit --env viewPort='iphone-se2' --spec 'cypress/e2e/inter_req.cy.ts'",
-    "cy:run-desktop": "cypress run --headed --no-exit --env viewPort='macbook-11' --spec 'cypress/e2e/inter_req.cy.ts'"
+    "cy:run-mobile": "cypress run --headed --no-exit --env viewPort='iphone-se2',userAgent='mobile' --spec 'cypress/e2e/inter_req.cy.ts'",
+    "cy:run-desktop": "cypress run --headed --no-exit --env viewPort='macbook-11',userAgent='desktop' --spec 'cypress/e2e/inter_req.cy.ts'"
   }, 
   "keywords": [],
   "author": "",

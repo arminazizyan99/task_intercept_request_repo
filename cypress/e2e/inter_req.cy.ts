@@ -1,11 +1,8 @@
 describe("Request/Intercept",()=>{
   context('view resolution', () => {
-  beforeEach(()=>{
-    
-    const viewValue = Cypress.env("viewPort")
-    cy.viewport(viewValue)
-    
- })
+  //beforeEach(()=>{
+        
+ //})
 
   it("should contain title text using request", ()=>{
 
